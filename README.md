@@ -27,3 +27,8 @@ Aplicación web hecha con HTML y JavaScript puro para la Guía de Laboratorio #0
 ## Nota sobre la API
 
 La API de GitHub permite 60 peticiones por hora sin autenticación. Cada búsqueda usa tres peticiones (perfil, repositorios y resumen de lenguajes). En este proyecto **no se usa ningún token**, porque todo el código de una página web es visible para cualquiera.
+
+   ## Enlaces
+
+   - Repositorio: https://github.com/Graciela-Ccansaya/buscador-github
+   - Sitio publicado: https://graciela-ccansaya.github.io/buscador-github/
