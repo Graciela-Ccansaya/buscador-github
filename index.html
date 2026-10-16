@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de perfiles GitHub</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 2rem auto; }
+        .perfil { display: flex; gap: 1rem; align-items: center; }
+        .perfil img { width: 96px; border-radius: 50%; }
+        .error  { color: crimson; }
+        .oculto { display: none; }
+        .pie    { color: gray; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <h1>Buscador de perfiles GitHub</h1>
+    <form id="form-buscar">
+        <input type="text" id="input-usuario" placeholder="Usuario" required>
+        <button type="submit" id="btn-buscar">Buscar</button>
+    </form>
+    <p>
+        <label for="select-orden">Ordenar repositorios por:</label>
+        <select id="select-orden">
+            <option value="updated">Última actualización (updated)</option>
+            <option value="created">Fecha de creación (created)</option>
+            <option value="full_name">Nombre (full_name)</option>
+        </select>
+    </p>
+    <p id="estado"></p>
+
+    <section id="perfil" class="perfil oculto"></section>
+    <h3 id="titulo-lenguajes" class="oculto">Lenguajes más usados</h3>
+    <ul id="lenguajes"></ul>
+    <h2 id="titulo-repos" class="oculto">Repositorios recientes</h2>
+    <ul id="repos"></ul>
+    <button id="btn-mas" class="oculto">Cargar más</button>
+    <p id="pie" class="pie"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
